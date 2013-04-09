@@ -1,9 +1,7 @@
 Introduction
 ============
 
-This buildout sets up a development or deployment configuration for:
-
-http://rheacting.de
+This buildout sets up a development or deployment environment for rheacting
 
 
 Installation
