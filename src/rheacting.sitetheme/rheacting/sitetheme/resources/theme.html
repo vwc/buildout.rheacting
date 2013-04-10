@@ -23,34 +23,62 @@
   </head>
 
   <body>
-
-    <header id="topbar">
-      <div id="toolbar" class="navbar navbar-inverse navbar-fixed-top">
-          <a class="navbar-brand" href="#">Plone Toolbar</a>
+    <header>
+    <div id="editbar-wrapper" class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid" id="editbar">
+          <a class="brand" href="#">Plone CMSUI Editbar</a>
+          <!-- Plone CMS Editbar inserted as a toolbar -->
+        </div>
       </div>
+    </div>
+    </header>
+    <header id="topbar">
+ <!--     <div id="toolbar" class="navbar navbar-inverse navbar-fixed-top">
+          <a class="navbar-brand" href="#">Plone Toolbar</a>
+      </div>-->
 
       <!-- Twitter boostrap based default navigation -->
+      <div class="container">
       <nav class="navbar">
         <div class="container">
-          <a class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="navbar-brand" href="#">Project name</a>
           <div class="nav-collapse collapse">
             <ul class="nav" id="main-nav">
               <li class="active"><a href="#">Home</a></li>
               <li><a href="#about">About</a></li>
               <li><a href="#contact">Contact</a></li>
-            </ul>
+            </ul> 
           </div><!--/.nav-collapse -->
         </div>
+          <a class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
       </nav>
+      <div id="header-wrapper">
+        <div class="container">
+          <ul id="main-links">
+          <li>
+            <a href="/">Rhetorik</a>
+              </li>
+                <li>
+                  <a href="/">Acting</a>
+                </li>
+              </ul>
+          <div id="logo-wrapper">
+            <h1><a href="/" id="logo">Logo</a></h1>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
     </header>
 
-    <section class="container">
-      <div id="content">
+    <section id="site-wrapper" class="container">
+
+   <div id="content">
         <h1>Starter template <small>The barebone minimal</small></h1>
         <p>Use this document as a way to quick start any new project.<br> All you get is this message and a barebones HTML document.</p>
       </div>
@@ -74,10 +102,34 @@
         </div>
       </div>
     </section> <!-- /container -->
-
+    <section id="kontakt-wrapper">
+      <div class="container">
+        <div id="kontaktpic"></div>
+        <h3><span>KONTAKT</span></h3>
+        <ul>
+          <li><a href="/"><i class="icon-phone-sign icon-large"></i><span>+49 (0) 175 524 19 7</span></a></li>
+          <li><a href="/"><i class="icon-envelope icon-large"></i><span>dj@rheacting.de</span></a></li>
+          <li><a href="/"><i class="icon-facebook-sign icon-large"></i><span>Facebook</span></a></li>
+          <li><a href="/"><i class="icon-google-plus-sign icon-large"></i><span>Xing</span></a></li>
+        </ul>
+      </div>
+    </section>
     <footer id="site-footer">
       <div class="container">
-        <p>&copy; ACME Corp. 2012</p>
+        <ul id="footernav">
+          <li>&copy; 2013 Rheacting. All rights reserved</li>
+          <li><a href="/">Impressum</a></li>
+          <li> . </li>
+          <li><a href="/">AGB</a></li>
+          <li> . </li>
+          <li><a href="/">Navipunkt</a></li>
+          <li> . </li>
+          <li><a href="/">Navipunkt</a></li>
+          <li> . </li>
+          <li><a href="/">Navipunkt</a></li>
+
+        </ul>
+        <p></p>
       </div>
     </footer>
 
@@ -85,6 +137,18 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="../js/application.js"></script>
-
+    <script type="text/javascript">
+    WebFontConfig = {
+    google: { families: [ 'Fjord+One::latin' ] }
+    };
+    (function() {
+      var wf = document.createElement('script');
+      wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+        '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+      wf.type = 'text/javascript';
+      wf.async = 'true';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(wf, s);
+    })(); </script>
   </body>
 </html>

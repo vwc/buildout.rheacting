@@ -1,18 +1,16 @@
 // Custom application specific styles
 //--------------------------------------
 
-
-// Bootstrap overrides
-// ------------------
-
-@font-size-base:          16px;
-
-
+@rh-red: #bc0b27;
+@lightpink: #efeeed;
+@darkpink: #dd9fa8;
+@darkgray: #363636;
 body {
     //background: #f5f5f5;
+    font-family: 'Fjord One', serif;
 }
 
-// rheacting for providing a data image via stylesheet
+// Example for providing a data image via stylesheet
 // Add this class to any element to provide some extend of visual noise
 .make-some-noise {
     background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQAQMAAAC032DuAAAABlBMVEUAAAAAAAClZ7nPAAAAAnRSTlMACHhIRQoAAAN7SURBVCiRAXADj/wAAkQJcM1mLQnAjAAb4sEhBjkWRBpWAIKF/FlkjVDJKKgA0KxA5QFOFWKpQgBG5PjjxiiDVJtnAHD5UwQVQstA7u8AOAYIMPmwiKga2gBooyeQA+jdVxiNABAIYGkr3lgTDBsAXQBAcGFmEGFEXQAwUgJEk6SsEMjDAApsetkgJK9PKJQAfDApaQUONGIDEgAKpcRsXsojEuY1ACYN4xSjdyGRVLcAsCBxpEiAUIkwYgBGLNoX24Yj9iJRAGMGy8gopJFOQvkAEZgtO9HAJC+9WACKQEJCwJGqpRoIAKYmUxdgMdl89AIApMRLQ/2pQLVbBQBDTLPsYJCDUEjoAHzhwoxoCKB4DAgAAN6ASuQFERMyvQCzWAJoFpkGjFsGAGLQnTrBTH4zIKIAFGUFG3UALzJDiwCmsCEwxUDwgFgIAFi/LtLBIAUJNBEAE4TENLhU8TjOCgAtAYILmwxnJrBoAAhNyenNNwViQFkANAFOhHKUo84QUAD0DRiji8DNOMJqADHrmeMWgFAgRrQAmIm9A9EhEGSBSgAulqWIGymRfxpwAH0DAAQSAnKWgdQASeJNibLEQzNOZwBzyCNrQnAEFoQoAAxMomBElggSqkgAAwFV5OAQZJ28ZwCCFaFCjSWxAObRAB8AJgRUj4BKIygApBGgk0MCkUMxFADVwIDCBY+OdMWgAG1xdOROdABshSMACAFX0QKD4hVCgwB2Mh6ZnAco8kNpAHsI4C8RY9CIiewAqyAZg6UNgAz7mgBkAxCbD25svIhqACgzbQNxciGqYNQAkARc2iVSMJ2lZADNJknADN80kC5jAOOUE5OONKUAsA0ARQLA1ABqDAEQCACIlnFgRPrqeUQyAKkAOV/GAUgi1RAAeAIX22Pv4uTlJABvEiKL1OBOaIWIAEsoNPRyRGQcMM0AQmzLIn0jGg0gNAAqsAQfVSb/NB1UAAi0AywKJQUIjCoA85ksYPNtqJExcQAYgoDzhYBwbWAdAKsgPswqlOqHbJMAUQlvpxLB1UzAGABpyxQ0mCs81wNXACHgmQEVxF1T9FUA8jrxkbDXWRJhoQBgoSwOksFRSSibACNkCSFowJxiMBYA4ek2cwRDk1DM8wCQCsQXTxHsamgRAEGGIlVQmcLwKhUAG+wigJjtKYW0HQC0OKRNEGFqXIOAbRpCReUGtgIAAAAASUVORK5CYII=);
@@ -25,60 +23,298 @@ body {
   color: @gray;
 }
 
-// rheacting styles for a custom editbar override of the basic
+// Example styles for a custom editbar override of the basic
 // twitter bootstarp navbar to make the edit bar look like a
 // browser toolbar
 body > header {
-    margin-bottom: @line-height-base;
+    background-color: #000;
     #toolbar + nav {
         margin-top: @navbar-height;
         .navbar-inner {
             border-radius:0px;
         }
     }
+
+#toolbar {
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+    }    
+    
     // Active nav items
+    .navbar {
+        font-family: 'museo', serif;
+        background-color: transparent;
+        float: right;
+    }
+
+    #main-nav {
+        margin-top: 70px;
+        font-size: 140%;
+        float: left;
+
+
+    }
+    #main-nav a {
+        color: #fff;
+    }
+    
+    #main-nav a:hover {
+        color: @rh-red;
+    }
     #main-nav .selected > a,
     #main-nav .selected > a:hover,
     #main-nav .selected > a:focus {
-      color: @navbar-link-active-color;
-      text-decoration: none;
-      background-color: @navbar-link-active-bg;
-      -webkit-box-shadow: inset 0 3px 8px rgba(0,0,0,.125);
-         -moz-box-shadow: inset 0 3px 8px rgba(0,0,0,.125);
-              box-shadow: inset 0 3px 8px rgba(0,0,0,.125);
+      color: @rh-red;
+//      text-decoration: none;
+//      background-color: @navbar-link-bg-active;
+//      -webkit-box-shadow: inset 0 3px 8px rgba(0,0,0,.125);
+//         -moz-box-shadow: inset 0 3px 8px rgba(0,0,0,.125);
+//              box-shadow: inset 0 3px 8px rgba(0,0,0,.125);
     }
 }
 
-// Some eample styles for portlets
-
-.portlet {
-  .portletHeader {
-    font-size: @font-size-base * 1.5;
-    padding: @padding-large;
-    border-bottom: 1px solid @grayLight;
-  }
-  .portletItem {
-    padding: @padding-large;
-  }
-  .portletFooter {
-    padding: @padding-large;
-    font-size: @font-size-small;
-  }
+.red {
+    color: @rh-red;
+}
+.white {
+    color: #fff;
 }
 
-// rheacting styles for listings (e.g. folder summary view)
+#header-wrapper {
 
-.tileItem {
-  .media();
-  .tileHeadline {
-    .media-heading();
-  }
+    height: 120px;
+    background: url(../img/header_bg.png) 50% 0 no-repeat transparent;
+    background-color: #000;
+    #main-links {
+        position: relative;
+        right: -700px;
+        top: 10px;
+        font-size: 180%;
+        list-style: none;
+        float: right;
+        width: 250px;
+        li {
+            display: inline-block;
+            width: 120px;
+            padding: 0.25em;
+            a {
+                text-decoration: none;
+                color: #fff;
+            }
+            a:hover, a:active {
+                color: @rh-red;
+            }
+        }
+    } 
+    #logo-wrapper {
+        #textbox {
+            margin-top: 5%;
+            margin-left: 33%;
+            width: 33%;
+            height: 60px;
+            letter-spacing: 0.25em;
+            #textboxHeader {
+                width: 100%;
+                height: 20px;
+                background: url(../img/arrow_down.png) 50% 0 no-repeat transparent;
+            }
+            #textboxBody {
+                margin-top: 10px;
+            }
+            text-align: center;
+            font-size: 150%;
+            font-weight: bold;
+        }
+
+    //    width: 1300px;
+        height: 120px;
+        #logo {
+            margin-top: -10px;
+            display: block;
+            background: 0 0px url(../img/logo.png) no-repeat;
+            background-size: 100%;
+            .size(295px, 95px);
+            text-indent: -3000px;
+            overflow:hidden;
+        }
+    }
 }
 
+#site-wrapper {
 
-// rheacting styles for a HMTL5 based site footer
+    #content {
+        h1.documentFirstHeading {
+            color: @rh-red;
+            font-family: 'museo', serif;
+        }
+        #box-wrapper {
+            .btn {
+                padding-right: 30px;
+                background: url(../img/arrow_right.png) 95% 50% no-repeat transparent;
+                background-color: @lightpink;
+                border: none;
+                a {
+                    color: #000;
+                } 
+            }
+            margin-top: -5%;
+            #leftBox {
+                display: block;
+                //width: 50%;
+                .boxHeader {
+                    background: url(../img/talkbubble_icon.png) 50% 0 no-repeat transparent;
+                    height: 180px;
+                    p {
+                        width: 100%;
+                        text-align: center;
+                        font-size: 150%;
+                        position: relative;
+                        top: 150px;
+                    }
+                }
+                .boxBody {
+                    padding-left: 20%;
+                    padding-right: 20%;
+                    p {
+                        text-align: center;
+                    }
+                }
+            }
+            #rightBox {
+                //width: 50%;
+                .boxHeader {
+                    background: url(../img/acting_icon.png) 50% 0 no-repeat transparent;
+                    height: 180px;
+                    p {
+                        width: 100%;
+                        text-align: center;
+                        font-size: 150%;
+                        position: relative;
+                        top: 150px;
+                    }
+                }
+                .boxBody {
+                    padding-left: 20%;
+                    padding-right: 20%;
+                    p {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#kontakt-wrapper {
+    font-family: 'museo', serif;
+    text-decoration: none;
+    ul {
+        margin-top: 30px;
+        width: 100%;
+        font-size: 180%;
+        li {
+            text-align: right;
+            width: 24%;
+            display: inline-block;
+            a {
+                display: inline-block;
+                text-decoration: none;
+                span {
+                    padding-left: 20px;
+                    color: #000;
+                }
+                i {
+                    width: auto;
+                    display: inline-block;
+                    color: @darkpink;                    
+                }
+                i:hover {
+                    color: @rh-red;
+                }
+
+            }
+            a:hover {
+                span {
+                 color: @rh-red;                   
+                }
+
+
+            }
+        }
+        li:hover {
+            color: @rh-red;
+        }
+    }
+    h3 {
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid #C5C5C5;
+        line-height: 0.1em;
+        margin: 10px 0 40px;
+        span {
+            background: @lightpink;
+            padding: 0 10px;
+        }
+        /*span {
+            display:inline-block;
+            position: relative;
+        }
+        span:after, span:before {
+            content: " ";
+            height: 1px;
+            width: 100%;
+            background: #000;
+            position: absolute;
+            top: 50%;
+        }
+        span:before {
+            left: -110%;
+        }
+        span:after {
+            right: -110%;
+        }*/
+    }
+    background-color: @lightpink;
+    height: 250px;
+    #kontaktpic {
+        background: url(../img/contact_icon.png) 50% 0 no-repeat transparent;
+        height: 70px;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+#info-wrapper {
+    font-size: 120%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    height: 400px;
+    img {
+        padding: 5%
+    }
+}
+
+// Example styles for a HMTL5 based site footer
 body > footer {
-    margin-top: @line-height-base;
+    background-color: @darkgray;
+    color: #fff;
     padding: @line-height-base 0;
-    border-top: 1px solid @grayLighter;
+    a {
+        color: #fff;
+    }
+    a:hover {
+        color: @rh-red;
+        text-decoration: none;
+    }
+//    border-top: 1px solid @grayLighter;
+    ul {
+        li {
+            display: inline-block;
+            float: right;
+            padding: 0.25em;
+        }
+    }
 }
