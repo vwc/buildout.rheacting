@@ -27,6 +27,8 @@ body {
 // twitter bootstarp navbar to make the edit bar look like a
 // browser toolbar
 body > header {
+    background: url(../img/header_bg.png) 0 0 no-repeat transparent;
+    background-position: center;
     background-color: #000;
     #toolbar + nav {
         margin-top: @navbar-height;
@@ -35,6 +37,9 @@ body > header {
         }
     }
 
+#topbar {
+    
+}
 #toolbar {
     width: 100%;
     background-color: #000;
@@ -44,17 +49,44 @@ body > header {
     
     // Active nav items
     .navbar {
+        position: relative;
+        z-index: 1;
         font-family: 'museo', serif;
         background-color: transparent;
         float: right;
+        display: block;
+        margin-left: 300px;
+        #main-links {
+        float: right;
+        top: 10px;
+        font-size: 180%;
+        list-style: none;
+        width: 260px;
+            li {
+                display: inline-block;
+                width: 120px;
+                padding: 0.25em;
+                span {
+                   padding-left: 10px;
+                 }
+                a {
+                    text-decoration: none;
+                    color: #fff;
+                }
+                a:hover, a:active {
+                   color: @rh-red;
+                }
+            }
+        }
+        .nav-collapse {
+            background-color: #000;  
+        }
     }
 
     #main-nav {
-        margin-top: 70px;
+        margin-top: 30px;
         font-size: 140%;
-        float: left;
-
-
+        float: right;
     }
     #main-nav a {
         color: #fff;
@@ -83,33 +115,9 @@ body > header {
 }
 
 #header-wrapper {
-
-    height: 120px;
-    background: url(../img/header_bg.png) 50% 0 no-repeat transparent;
-    background-color: #000;
-    #main-links {
-        position: relative;
-        right: -700px;
-        top: 10px;
-        font-size: 180%;
-        list-style: none;
-        float: right;
-        width: 250px;
-        li {
-            display: inline-block;
-            width: 120px;
-            padding: 0.25em;
-            a {
-                text-decoration: none;
-                color: #fff;
-            }
-            a:hover, a:active {
-                color: @rh-red;
-            }
-        }
-    } 
+    min-height: 100px;
     #logo-wrapper {
-        #textbox {
+       #textbox {
             margin-top: 5%;
             margin-left: 33%;
             width: 33%;
@@ -127,11 +135,11 @@ body > header {
             font-size: 150%;
             font-weight: bold;
         }
-
-    //    width: 1300px;
-        height: 120px;
         #logo {
-            margin-top: -10px;
+            position: absolute;
+            top: 5px;
+            z-index: 0;
+            margin-bottom: 10px; 
             display: block;
             background: 0 0px url(../img/logo.png) no-repeat;
             background-size: 100%;
