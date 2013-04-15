@@ -112,20 +112,27 @@ body > header {
 }
 
 #header-wrapper-frontpage {
-    min-height: 295px;
+    min-height: 340px;
     #social-links {
+        font-size: 140%;
         margin-top: -100px;
-        width: 150px;
+        width: 200px;
         float: right;
         list-style: none;
         li {
             display: inline-block;
             a {
-                color: #fff;
+                padding: 0.25em;
+                color: #000;
                 text-decoration: none;
             }
             a:hover {
                 color: @rh-red;
+            }
+            i {
+                padding-top: 7px;
+                background-color: #fff;
+                border-radius: 20px 20px 20px 20px;
             }
         }
 
@@ -202,7 +209,7 @@ body > header {
                 display: block;
                 //width: 50%;
                 .boxHeader {
-                    background: url(../img/talkbubble_icon.png) 50% 0 no-repeat transparent;
+                    background: url(../img/microphone.png) 50% 0 no-repeat transparent;
                     height: 180px;
                     p {
                         width: 100%;
@@ -223,7 +230,7 @@ body > header {
             #rightBox {
                 //width: 50%;
                 .boxHeader {
-                    background: url(../img/acting_icon.png) 50% 0 no-repeat transparent;
+                    background: url(../img/theater.png) 50% 0 no-repeat transparent;
                     height: 180px;
                     p {
                         width: 100%;
@@ -282,24 +289,6 @@ body > header {
             background: @lightpink;
             padding: 0 10px;
         }
-        /*span {
-            display:inline-block;
-            position: relative;
-        }
-        span:after, span:before {
-            content: " ";
-            height: 1px;
-            width: 100%;
-            background: #000;
-            position: absolute;
-            top: 50%;
-        }
-        span:before {
-            left: -110%;
-        }
-        span:after {
-            right: -110%;
-        }*/
     }
     background-color: @lightpink;
     height: 250px;
