@@ -37,9 +37,6 @@ body > header {
         }
     }
 
-#topbar {
-    
-}
 #toolbar {
     width: 100%;
     background-color: #000;
@@ -114,11 +111,28 @@ body > header {
     color: #fff;
 }
 
-#header-wrapper {
-    min-height: 100px;
+#header-wrapper-frontpage {
+    min-height: 295px;
+    #social-links {
+        margin-top: -100px;
+        width: 150px;
+        float: right;
+        list-style: none;
+        li {
+            display: inline-block;
+            a {
+                color: #fff;
+                text-decoration: none;
+            }
+            a:hover {
+                color: @rh-red;
+            }
+        }
+
+    }
     #logo-wrapper {
        #textbox {
-            margin-top: 5%;
+            margin-top: 100px;
             margin-left: 33%;
             width: 33%;
             height: 60px;
@@ -149,9 +163,25 @@ body > header {
         }
     }
 }
+#header-wrapper {
+    min-height: 100px;
+    #logo-wrapper {
+        #logo {
+            position: absolute;
+            top: 5px;
+            z-index: 0;
+            margin-bottom: 10px; 
+            display: block;
+            background: 0 0px url(../img/logo.png) no-repeat;
+            background-size: 100%;
+            .size(295px, 95px);
+            text-indent: -3000px;
+            overflow:hidden;
+        }
+    }
+}
 
 #site-wrapper {
-
     #content {
         h1.documentFirstHeading {
             color: @rh-red;
@@ -218,43 +248,30 @@ body > header {
 #kontakt-wrapper {
     font-family: 'museo', serif;
     text-decoration: none;
-    ul {
-        margin-top: 30px;
-        width: 100%;
-        font-size: 180%;
-        li {
-            text-align: right;
-            width: 24%;
-            display: inline-block;
-            a {
-                display: inline-block;
-                text-decoration: none;
-                span {
-                    padding-left: 20px;
-                    color: #000;
-                }
-                i {
-                    width: auto;
-                    display: inline-block;
-                    color: @darkpink;                    
-                }
-                i:hover {
-                    color: @rh-red;
-                }
-
-            }
-            a:hover {
-                span {
-                 color: @rh-red;                   
-                }
-
-
-            }
-        }
-        li:hover {
-            color: @rh-red;
-        }
+    font-size: 150%;
+    margin-top: 30px;
+    a {
+        display: inline-block;
+        text-decoration: none;
+    span {
+        padding-left: 20px;
+        color: #000;
     }
+    i {
+        width: auto;
+        display: inline-block;
+        color: @darkpink;                    
+        }
+    i:hover {
+        color: @rh-red;
+    }
+    }
+    a:hover {
+        span {
+        color: @rh-red;                   
+    }
+}
+
     h3 {
         width: 100%;
         text-align: center;

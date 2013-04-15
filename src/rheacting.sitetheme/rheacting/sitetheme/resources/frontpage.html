@@ -24,12 +24,12 @@
 
   <body>
     <header id="topbar">
-      <div id="toolbar" class="navbar navbar-inverse navbar-fixed-top">
+<!--      <div id="toolbar" class="navbar navbar-inverse navbar-fixed-top">
           <a class="navbar-brand" href="#">Plone CMSUI Editbar</a>
-      </div>
+      </div>-->
 
       <!-- Twitter boostrap based default navigation -->
-      <nav class="navbar">
+<!--      <nav class="navbar">
         <div class="container">
           <a class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
             <span class="icon-bar"></span>
@@ -43,11 +43,11 @@
               <li><a href="#about">About</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
-          </div><!--/.nav-collapse -->
+          </div>
         </div>
-      </nav>
-      
-      <div id="header-wrapper">
+      </nav>-->
+
+      <div id="header-wrapper-frontpage">
         <div class="container">
           <div id="logo-wrapper">
             <h1><a href="/" id="logo">Logo</a></h1>
@@ -59,7 +59,17 @@
             </div>
           </div>
           </div>
-          
+            <ul id="social-links">
+              <li>
+                <a href="/"><i class="icon-facebook-sign icon-large"></i></a>
+              </li>
+              <li>
+                <a href="/"><i class="icon-phone-sign icon-large"></i></a>
+              </li>
+              <li>
+                <a href="/"><i class="icon-google-plus-sign icon-large"></i></a>
+              </li>
+            </ul><!-- #social-links -->
         </div>
       </div>
     </header>
@@ -68,7 +78,7 @@
       <div id="content">
         <div id="box-wrapper">
           <div class="row">
-            <div id="leftBox" class="span6">
+            <div id="leftBox" class="col-span-6">
               <div class="boxHeader">
                   <p><span class="red">RHE</span><span>TORIK</span></p>
               </div>
@@ -88,7 +98,7 @@
                 </p>
               </div>
             </div>
-            <div id="rightBox" class="span6">
+            <div id="rightBox" class="col-span-6">
               <div class="boxHeader">
                   <p><span class="red">ACTING</span></p>
               </div>
@@ -114,24 +124,32 @@
       </div>
     </section> <!-- /container -->
     <section id="kontakt-wrapper">
-      <div class="container">
+      <div class="row">
         <div id="kontaktpic"></div>
         <h3><span>KONTAKT</span></h3>
-        <ul>
-          <li><a href="/"><i class="icon-phone-sign icon-large"></i><span>+49 (0) 175 524 19 7</span></a></li>
-          <li><a href="/"><i class="icon-envelope icon-large"></i><span>dj@rheacting.de</span></a></li>
-          <li><a href="/"><i class="icon-facebook-sign icon-large"></i><span>Facebook</span></a></li>
-          <li><a href="/"><i class="icon-google-plus-sign icon-large"><span>Xing</span></i></a></li>
-        </ul>
+        <div class="container">
+        <div class="col-span-3">
+          <a href="/"><i class="icon-phone-sign icon-large"></i><span>+49 (0) 175 524 19 7</span></a>
+        </div>
+        <div class="col-span-3">
+          <a href="/"><i class="icon-envelope icon-large"></i><span>dj@rheacting.de</span></a>          
+        </div>
+        <div class="col-span-3">
+          <a href="/"><i class="icon-facebook-sign icon-large"></i><span>Facebook</span></a>          
+        </div>
+        <div class="col-span-3">
+          <a href="/"><i class="icon-google-plus-sign icon-large"><span>Xing</span></i></a>          
+        </div>
+      </div>
       </div>
     </section>
     <section id="info-wrapper" class="container">
-      <div class="span4">
+      <div class="col-span-4">
             <img src="img/photo.png" alt="Dagmar Jessusek" id="photo" />
             <h1>Dagmar Jesussek</h1>
       </div>
 
-      <div class="span8">
+      <div class="col-span-8">
           <h1>Dagmar Jesussek</h1>
           <h5>(BA Rhetorik <span class="red"> . </span>Diplom Schauspiel)</h5>
           <p>Seit &uuml;ber 10 Jahren stehe ich als Schauspielerin auf den B&uuml;hnen der verschiedensten
@@ -153,7 +171,20 @@
     </section>
     <footer id="site-footer">
       <div class="container">
-        <p>&copy; ACME Corp. 2012</p>
+        <ul id="footernav">
+          <li>&copy; 2013 Rheacting. All rights reserved</li>
+          <li><a href="/">Impressum</a></li>
+          <li> . </li>
+          <li><a href="/">AGB</a></li>
+          <li> . </li>
+          <li><a href="/">Navipunkt</a></li>
+          <li> . </li>
+          <li><a href="/">Navipunkt</a></li>
+          <li> . </li>
+          <li><a href="/">Navipunkt</a></li>
+
+        </ul>
+        <p></p>
       </div>
     </footer>
 
