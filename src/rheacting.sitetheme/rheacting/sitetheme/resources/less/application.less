@@ -42,7 +42,7 @@ body > header {
     background-color: #000;
     color: #fff;
     display: inline-block;
-    }    
+}    
     
     // Active nav items
     .navbar {
@@ -53,28 +53,28 @@ body > header {
         float: right;
         display: block;
         margin-left: 300px;
-        #main-links {
-        float: right;
-        top: 10px;
-        font-size: 180%;
-        list-style: none;
-        width: 260px;
-            li {
-                display: inline-block;
-                width: 120px;
-                padding: 0.25em;
-                span {
-                   padding-left: 10px;
-                 }
-                a {
-                    text-decoration: none;
-                    color: #fff;
-                }
-                a:hover, a:active {
-                   color: @rh-red;
+            #main-links {
+                float: right;
+                top: 10px;
+                font-size: 180%;
+                list-style: none;
+                width: 260px;
+                li {
+                    display: inline-block;
+                    width: 120px;
+                    padding: 0.25em;
+                    span {
+                        padding-left: 10px;
+                    }
+                    a {
+                        text-decoration: none;
+                        color: #fff;
+                    }
+                    a:hover, a:active {
+                        color: @rh-red;
+                     }
                 }
             }
-        }
         .nav-collapse {
             background-color: #000;  
         }
@@ -137,7 +137,6 @@ body > header {
         }
 
     }
-    #logo-wrapper {
        #textbox {
             margin-top: 100px;
             margin-left: 33%;
@@ -157,7 +156,7 @@ body > header {
             font-weight: bold;
         }
         #logo {
-            position: absolute;
+            float: left;
             top: 5px;
             z-index: 0;
             margin-bottom: 10px; 
@@ -168,13 +167,11 @@ body > header {
             text-indent: -3000px;
             overflow:hidden;
         }
-    }
 }
 #header-wrapper {
     min-height: 100px;
-    #logo-wrapper {
         #logo {
-            position: absolute;
+            float: left;
             top: 5px;
             z-index: 0;
             margin-bottom: 10px; 
@@ -185,10 +182,11 @@ body > header {
             text-indent: -3000px;
             overflow:hidden;
         }
-    }
 }
 
 #site-wrapper {
+    // Active nav items
+
     #content {
         h1.documentFirstHeading {
             color: @rh-red;
@@ -260,20 +258,20 @@ body > header {
     a {
         display: inline-block;
         text-decoration: none;
-    span {
-        padding-left: 20px;
-        color: #000;
-    }
-    i {
-        width: auto;
-        display: inline-block;
-        color: @darkpink;                    
+        span {
+            margin-left: 15px;
+            color: #000;
         }
-    i:hover {
-        color: @rh-red;
-    }
+        i {
+            display: inline-block;
+            color: @darkpink;                    
+            }
+        i:hover {
+            color: @rh-red;
+         }
     }
     a:hover {
+        color: @rh-red;
         span {
         color: @rh-red;                   
     }
@@ -291,7 +289,7 @@ body > header {
         }
     }
     background-color: @lightpink;
-    height: 250px;
+    min-height: 250px;
     #kontaktpic {
         background: url(../img/contact_icon.png) 50% 0 no-repeat transparent;
         height: 70px;
