@@ -6022,6 +6022,7 @@ table.grid th {
 }
 body {
   font-family: 'Fjord One', serif;
+  line-height: 30px;
 }
 .make-some-noise {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQAQMAAAC032DuAAAABlBMVEUAAAAAAAClZ7nPAAAAAnRSTlMACHhIRQoAAAN7SURBVCiRAXADj/wAAkQJcM1mLQnAjAAb4sEhBjkWRBpWAIKF/FlkjVDJKKgA0KxA5QFOFWKpQgBG5PjjxiiDVJtnAHD5UwQVQstA7u8AOAYIMPmwiKga2gBooyeQA+jdVxiNABAIYGkr3lgTDBsAXQBAcGFmEGFEXQAwUgJEk6SsEMjDAApsetkgJK9PKJQAfDApaQUONGIDEgAKpcRsXsojEuY1ACYN4xSjdyGRVLcAsCBxpEiAUIkwYgBGLNoX24Yj9iJRAGMGy8gopJFOQvkAEZgtO9HAJC+9WACKQEJCwJGqpRoIAKYmUxdgMdl89AIApMRLQ/2pQLVbBQBDTLPsYJCDUEjoAHzhwoxoCKB4DAgAAN6ASuQFERMyvQCzWAJoFpkGjFsGAGLQnTrBTH4zIKIAFGUFG3UALzJDiwCmsCEwxUDwgFgIAFi/LtLBIAUJNBEAE4TENLhU8TjOCgAtAYILmwxnJrBoAAhNyenNNwViQFkANAFOhHKUo84QUAD0DRiji8DNOMJqADHrmeMWgFAgRrQAmIm9A9EhEGSBSgAulqWIGymRfxpwAH0DAAQSAnKWgdQASeJNibLEQzNOZwBzyCNrQnAEFoQoAAxMomBElggSqkgAAwFV5OAQZJ28ZwCCFaFCjSWxAObRAB8AJgRUj4BKIygApBGgk0MCkUMxFADVwIDCBY+OdMWgAG1xdOROdABshSMACAFX0QKD4hVCgwB2Mh6ZnAco8kNpAHsI4C8RY9CIiewAqyAZg6UNgAz7mgBkAxCbD25svIhqACgzbQNxciGqYNQAkARc2iVSMJ2lZADNJknADN80kC5jAOOUE5OONKUAsA0ARQLA1ABqDAEQCACIlnFgRPrqeUQyAKkAOV/GAUgi1RAAeAIX22Pv4uTlJABvEiKL1OBOaIWIAEsoNPRyRGQcMM0AQmzLIn0jGg0gNAAqsAQfVSb/NB1UAAi0AywKJQUIjCoA85ksYPNtqJExcQAYgoDzhYBwbWAdAKsgPswqlOqHbJMAUQlvpxLB1UzAGABpyxQ0mCs81wNXACHgmQEVxF1T9FUA8jrxkbDXWRJhoQBgoSwOksFRSSibACNkCSFowJxiMBYA4ek2cwRDk1DM8wCQCsQXTxHsamgRAEGGIlVQmcLwKhUAG+wigJjtKYW0HQC0OKRNEGFqXIOAbRpCReUGtgIAAAAASUVORK5CYII=);
@@ -6131,28 +6132,30 @@ body > header #main-nav .selected > a:focus {
   background-color: #fff;
   border-radius: 20px 20px 20px 20px;
 }
-#header-wrapper-frontpage #logo-wrapper #textbox {
+#header-wrapper-frontpage #textbox {
+  padding-top: 50px;
   margin-top: 100px;
-  margin-left: 33%;
-  width: 33%;
-  height: 60px;
+  margin-left: 30%;
+  width: 45%;
+  height: 100px;
   letter-spacing: 0.25em;
   text-align: center;
   font-size: 150%;
   font-weight: bold;
 }
-#header-wrapper-frontpage #logo-wrapper #textbox #textboxHeader {
+#header-wrapper-frontpage #textbox #textboxHeader {
   width: 100%;
   height: 20px;
   background: url(../img/arrow_down.png) 50% 0 no-repeat transparent;
 }
-#header-wrapper-frontpage #logo-wrapper #textbox #textboxBody {
+#header-wrapper-frontpage #textbox #textboxBody {
   margin-top: 10px;
 }
-#header-wrapper-frontpage #logo-wrapper #logo {
-  position: absolute;
+#header-wrapper-frontpage #logo {
+  float: left;
   top: 5px;
   z-index: 0;
+  margin-left: 25px;
   margin-bottom: 10px;
   display: block;
   background: 0 0px url(../img/logo.png) no-repeat;
@@ -6165,8 +6168,8 @@ body > header #main-nav .selected > a:focus {
 #header-wrapper {
   min-height: 100px;
 }
-#header-wrapper #logo-wrapper #logo {
-  position: absolute;
+#header-wrapper #logo {
+  float: left;
   top: 5px;
   z-index: 0;
   margin-bottom: 10px;
@@ -6178,9 +6181,65 @@ body > header #main-nav .selected > a:focus {
   text-indent: -3000px;
   overflow: hidden;
 }
+#site-wrapper #content pre {
+  background-color: #fff;
+  border: none;
+}
 #site-wrapper #content h1.documentFirstHeading {
   color: #bc0b27;
   font-family: 'museo', serif;
+  text-transform: uppercase;
+}
+#site-wrapper #content #content-core ul {
+  list-style: none;
+}
+#site-wrapper #content #content-core li {
+  position: relative;
+}
+#site-wrapper #content #content-core li:before {
+  position: absolute;
+  top: 8px;
+  margin: 0 0 0 -12px;
+  /* accommodate Camino */
+
+  vertical-align: middle;
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  background: #bc0b27;
+  content: "";
+}
+#site-wrapper #content #content-core .pullquote {
+  width: auto;
+  border: none;
+  background-color: #fff;
+}
+#site-wrapper #content #content-core .pullquote a {
+  float: right;
+  color: #000;
+  text-decoration: none;
+  padding: 20px 40px 20px 20px;
+  border-radius: 5px 5px 5px 5px;
+  background: url(../img/arrow_right.png) 90% 50% no-repeat transparent;
+  background-color: #efeeed;
+}
+#site-wrapper #content #content-core a {
+  color: #bc0b27;
+}
+#site-wrapper #content #content-core img {
+  border: none;
+}
+#site-wrapper #content #content-core h3 {
+  text-decoration: underline;
+}
+#site-wrapper #content #content-core .tileHeadline {
+  letter-spacing: 0.25em;
+}
+#site-wrapper #content #content-core .tileHeadline a {
+  text-decoration: none;
+  color: #000;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #000;
 }
 #site-wrapper #content #box-wrapper {
   margin-top: -5%;
@@ -6198,6 +6257,7 @@ body > header #main-nav .selected > a:focus {
   display: block;
 }
 #site-wrapper #content #box-wrapper #leftBox .boxHeader {
+  margin-top: 20px;
   background: url(../img/microphone.png) 50% 0 no-repeat transparent;
   height: 180px;
 }
@@ -6216,6 +6276,7 @@ body > header #main-nav .selected > a:focus {
   text-align: center;
 }
 #site-wrapper #content #box-wrapper #rightBox .boxHeader {
+  margin-top: 20px;
   background: url(../img/theater.png) 50% 0 no-repeat transparent;
   height: 180px;
 }
@@ -6239,22 +6300,24 @@ body > header #main-nav .selected > a:focus {
   font-size: 150%;
   margin-top: 30px;
   background-color: #efeeed;
-  height: 250px;
+  min-height: 250px;
 }
 #kontakt-wrapper a {
   display: inline-block;
   text-decoration: none;
 }
 #kontakt-wrapper a span {
-  padding-left: 20px;
+  margin-left: 15px;
   color: #000;
 }
 #kontakt-wrapper a i {
-  width: auto;
   display: inline-block;
   color: #dd9fa8;
 }
 #kontakt-wrapper a i:hover {
+  color: #bc0b27;
+}
+#kontakt-wrapper a:hover {
   color: #bc0b27;
 }
 #kontakt-wrapper a:hover span {
@@ -6281,11 +6344,23 @@ body > header #main-nav .selected > a:focus {
 #info-wrapper {
   font-size: 120%;
   margin-top: 30px;
-  margin-bottom: 20px;
-  height: 400px;
+  margin-bottom: 50px;
 }
 #info-wrapper img {
   padding: 5%;
+}
+#info-wrapper #personal h1 {
+  font-size: 47px;
+  margin-left: 20px;
+  font-family: 'Zeyada', cursive;
+}
+@media (max-width: 370px) {
+  #header-wrapper-frontpage #social-links {
+    margin-top: 100px;
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+  }
 }
 body > footer {
   background-color: #363636;
