@@ -203,6 +203,42 @@ body > header {
             text-transform: uppercase;
         }
         #content-core {
+            ul {
+                list-style: none;
+            }
+            li {
+                position: relative;
+            }
+            li:before {
+                position: absolute;
+                top: 8px;
+                margin: 0 0 0 -12px;
+                /* accommodate Camino */
+                vertical-align: middle;
+                display: inline-block;
+                width: 4px;
+                height: 4px;
+                background: @rh-red;
+                content: "";
+            }
+            .pullquote {
+                a {
+                float: right;
+                color: #000;
+                text-decoration: none;
+                padding: 20px 40px 20px 20px;
+                border-radius: 5px 5px 5px 5px;
+                background: url(../img/arrow_right.png) 90% 50% no-repeat transparent;
+                background-color: @lightpink;                    
+                }
+                width: auto;
+                border: none;
+                background-color: #fff;
+
+            }
+            a {
+                color: @rh-red;
+            }
             img {
                 border:none;
             }
