@@ -6181,26 +6181,32 @@ body > header #main-nav .selected > a:focus {
   text-indent: -3000px;
   overflow: hidden;
 }
-#site-wrapper #content {
+#site-wrapper #content,
+#site-wrapper #frontpage-content {
   margin-left: 10px;
   margin-right: 10px;
 }
-#site-wrapper #content pre {
+#site-wrapper #content pre,
+#site-wrapper #frontpage-content pre {
   background-color: #fff;
   border: none;
 }
-#site-wrapper #content h1.documentFirstHeading {
+#site-wrapper #content h1.documentFirstHeading,
+#site-wrapper #frontpage-content h1.documentFirstHeading {
   color: #bc0b27;
   font-family: 'museo', serif;
   text-transform: uppercase;
 }
-#site-wrapper #content #content-core ul {
+#site-wrapper #content #content-core ul,
+#site-wrapper #frontpage-content #content-core ul {
   list-style: none;
 }
-#site-wrapper #content #content-core li {
+#site-wrapper #content #content-core li,
+#site-wrapper #frontpage-content #content-core li {
   position: relative;
 }
-#site-wrapper #content #content-core li:before {
+#site-wrapper #content #content-core li:before,
+#site-wrapper #frontpage-content #content-core li:before {
   position: absolute;
   top: 8px;
   margin: 0 0 0 -12px;
@@ -6213,12 +6219,14 @@ body > header #main-nav .selected > a:focus {
   background: #bc0b27;
   content: "";
 }
-#site-wrapper #content #content-core .pullquote {
+#site-wrapper #content #content-core .pullquote,
+#site-wrapper #frontpage-content #content-core .pullquote {
   width: auto;
   border: none;
   background-color: #fff;
 }
-#site-wrapper #content #content-core .pullquote a {
+#site-wrapper #content #content-core .pullquote a,
+#site-wrapper #frontpage-content #content-core .pullquote a {
   float: right;
   color: #000;
   text-decoration: none;
@@ -6227,75 +6235,92 @@ body > header #main-nav .selected > a:focus {
   background: url(../img/arrow_right.png) 90% 50% no-repeat transparent;
   background-color: #efeeed;
 }
-#site-wrapper #content #content-core a {
+#site-wrapper #content #content-core a,
+#site-wrapper #frontpage-content #content-core a {
   color: #bc0b27;
 }
-#site-wrapper #content #content-core img {
+#site-wrapper #content #content-core img,
+#site-wrapper #frontpage-content #content-core img {
   border: none;
 }
-#site-wrapper #content #content-core h3 {
+#site-wrapper #content #content-core h3,
+#site-wrapper #frontpage-content #content-core h3 {
   text-decoration: underline;
 }
-#site-wrapper #content #content-core .tileHeadline {
+#site-wrapper #content #content-core .tileHeadline,
+#site-wrapper #frontpage-content #content-core .tileHeadline {
   letter-spacing: 0.25em;
 }
-#site-wrapper #content #content-core .tileHeadline a {
+#site-wrapper #content #content-core .tileHeadline a,
+#site-wrapper #frontpage-content #content-core .tileHeadline a {
   text-decoration: none;
   color: #000;
   padding-bottom: 5px;
   border-bottom: 1px solid #000;
 }
-#site-wrapper #content #box-wrapper {
+#site-wrapper #content #box-wrapper,
+#site-wrapper #frontpage-content #box-wrapper {
   margin-top: -5%;
 }
-#site-wrapper #content #box-wrapper .btn {
+#site-wrapper #content #box-wrapper .btn,
+#site-wrapper #frontpage-content #box-wrapper .btn {
   padding-right: 30px;
   background: url(../img/arrow_right.png) 95% 50% no-repeat transparent;
   background-color: #efeeed;
   border: none;
 }
-#site-wrapper #content #box-wrapper .btn a {
+#site-wrapper #content #box-wrapper .btn a,
+#site-wrapper #frontpage-content #box-wrapper .btn a {
   color: #000;
 }
-#site-wrapper #content #box-wrapper #leftBox {
+#site-wrapper #content #box-wrapper #leftBox,
+#site-wrapper #frontpage-content #box-wrapper #leftBox {
   display: block;
 }
-#site-wrapper #content #box-wrapper #leftBox .boxHeader {
+#site-wrapper #content #box-wrapper #leftBox .boxHeader,
+#site-wrapper #frontpage-content #box-wrapper #leftBox .boxHeader {
   margin-top: 20px;
   background: url(../img/microphone.png) 50% 0 no-repeat transparent;
   height: 180px;
 }
-#site-wrapper #content #box-wrapper #leftBox .boxHeader p {
+#site-wrapper #content #box-wrapper #leftBox .boxHeader p,
+#site-wrapper #frontpage-content #box-wrapper #leftBox .boxHeader p {
   width: 100%;
   text-align: center;
   font-size: 150%;
   position: relative;
   top: 150px;
 }
-#site-wrapper #content #box-wrapper #leftBox .boxBody {
+#site-wrapper #content #box-wrapper #leftBox .boxBody,
+#site-wrapper #frontpage-content #box-wrapper #leftBox .boxBody {
   padding-left: 20%;
   padding-right: 20%;
 }
-#site-wrapper #content #box-wrapper #leftBox .boxBody p {
+#site-wrapper #content #box-wrapper #leftBox .boxBody p,
+#site-wrapper #frontpage-content #box-wrapper #leftBox .boxBody p {
   text-align: center;
 }
-#site-wrapper #content #box-wrapper #rightBox .boxHeader {
+#site-wrapper #content #box-wrapper #rightBox .boxHeader,
+#site-wrapper #frontpage-content #box-wrapper #rightBox .boxHeader {
   margin-top: 20px;
   background: url(../img/theater.png) 50% 0 no-repeat transparent;
   height: 180px;
 }
-#site-wrapper #content #box-wrapper #rightBox .boxHeader p {
+#site-wrapper #content #box-wrapper #rightBox .boxHeader p,
+#site-wrapper #frontpage-content #box-wrapper #rightBox .boxHeader p {
   width: 100%;
   text-align: center;
   font-size: 150%;
   position: relative;
   top: 150px;
 }
-#site-wrapper #content #box-wrapper #rightBox .boxBody {
+#site-wrapper #content #box-wrapper #rightBox .boxBody,
+#site-wrapper #frontpage-content #box-wrapper #rightBox .boxBody {
   padding-left: 20%;
   padding-right: 20%;
 }
-#site-wrapper #content #box-wrapper #rightBox .boxBody p {
+#site-wrapper #content #box-wrapper #rightBox .boxBody p,
+#site-wrapper #frontpage-content #box-wrapper #rightBox .boxBody p {
   text-align: center;
 }
 #kontakt-wrapper {
