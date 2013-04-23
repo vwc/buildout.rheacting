@@ -191,8 +191,9 @@ body > header {
 
 #site-wrapper {
     // Active nav items
-
     #content {
+    margin-left: 10px;
+    margin-right: 10px;
         pre {
             background-color: #fff;
             border: none;
@@ -321,27 +322,28 @@ body > header {
     text-decoration: none;
     font-size: 150%;
     margin-top: 30px;
+    .col-span-3:hover {
+        i {color: @rh-red;}
+    }
     a {
         display: inline-block;
         text-decoration: none;
         span {
-            margin-left: 15px;
             color: #000;
         }
         i {
+            padding-right: 15px;
             display: inline-block;
             color: @darkpink;                    
             }
-        i:hover {
-            color: @rh-red;
-         }
+
     }
     a:hover {
         color: @rh-red;
         span {
-        color: @rh-red;                   
+            color: @rh-red;                   
+        }
     }
-}
 
     h3 {
         width: 100%;

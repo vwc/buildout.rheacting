@@ -6181,6 +6181,10 @@ body > header #main-nav .selected > a:focus {
   text-indent: -3000px;
   overflow: hidden;
 }
+#site-wrapper #content {
+  margin-left: 10px;
+  margin-right: 10px;
+}
 #site-wrapper #content pre {
   background-color: #fff;
   border: none;
@@ -6302,20 +6306,20 @@ body > header #main-nav .selected > a:focus {
   background-color: #efeeed;
   min-height: 250px;
 }
+#kontakt-wrapper .col-span-3:hover i {
+  color: #bc0b27;
+}
 #kontakt-wrapper a {
   display: inline-block;
   text-decoration: none;
 }
 #kontakt-wrapper a span {
-  margin-left: 15px;
   color: #000;
 }
 #kontakt-wrapper a i {
+  padding-right: 15px;
   display: inline-block;
   color: #dd9fa8;
-}
-#kontakt-wrapper a i:hover {
-  color: #bc0b27;
 }
 #kontakt-wrapper a:hover {
   color: #bc0b27;
