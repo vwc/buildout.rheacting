@@ -6110,6 +6110,7 @@ body > header #main-nav .selected > a:focus {
   min-height: 340px;
 }
 #header-wrapper-frontpage #social-links {
+  font-family: 'Noto Sans', sans-serif;
   font-size: 140%;
   margin-top: -100px;
   width: 200px;
@@ -6127,12 +6128,16 @@ body > header #main-nav .selected > a:focus {
 #header-wrapper-frontpage #social-links li a:hover {
   color: #bc0b27;
 }
+#header-wrapper-frontpage #social-links li a:active {
+  color: #bc0b27;
+}
 #header-wrapper-frontpage #social-links li i {
   padding-top: 7px;
   background-color: #fff;
   border-radius: 20px 20px 20px 20px;
 }
 #header-wrapper-frontpage #textbox {
+  font-family: 'Noto Sans', sans-serif;
   padding-top: 50px;
   margin-top: 100px;
   margin-left: 30%;
@@ -6193,6 +6198,7 @@ body > header #main-nav .selected > a:focus {
 }
 #site-wrapper #content h1.documentFirstHeading,
 #site-wrapper #frontpage-content h1.documentFirstHeading {
+  font-family: 'Noto Sans', sans-serif;
   color: #bc0b27;
   font-family: 'museo', serif;
   text-transform: uppercase;
@@ -6245,6 +6251,7 @@ body > header #main-nav .selected > a:focus {
 }
 #site-wrapper #content #content-core h3,
 #site-wrapper #frontpage-content #content-core h3 {
+  font-family: 'Noto Sans', sans-serif;
   text-decoration: underline;
 }
 #site-wrapper #content #content-core .tileHeadline,
@@ -6262,16 +6269,13 @@ body > header #main-nav .selected > a:focus {
 #site-wrapper #frontpage-content #box-wrapper {
   margin-top: -5%;
 }
-#site-wrapper #content #box-wrapper .btn,
-#site-wrapper #frontpage-content #box-wrapper .btn {
+#site-wrapper #content #box-wrapper a .btn,
+#site-wrapper #frontpage-content #box-wrapper a .btn {
+  color: #000;
   padding-right: 30px;
   background: url(../img/arrow_right.png) 95% 50% no-repeat transparent;
   background-color: #efeeed;
   border: none;
-}
-#site-wrapper #content #box-wrapper .btn a,
-#site-wrapper #frontpage-content #box-wrapper .btn a {
-  color: #000;
 }
 #site-wrapper #content #box-wrapper #leftBox,
 #site-wrapper #frontpage-content #box-wrapper #leftBox {
@@ -6279,6 +6283,7 @@ body > header #main-nav .selected > a:focus {
 }
 #site-wrapper #content #box-wrapper #leftBox .boxHeader,
 #site-wrapper #frontpage-content #box-wrapper #leftBox .boxHeader {
+  font-family: 'Noto Sans', sans-serif;
   margin-top: 20px;
   background: url(../img/microphone.png) 50% 0 no-repeat transparent;
   height: 180px;
@@ -6302,6 +6307,7 @@ body > header #main-nav .selected > a:focus {
 }
 #site-wrapper #content #box-wrapper #rightBox .boxHeader,
 #site-wrapper #frontpage-content #box-wrapper #rightBox .boxHeader {
+  font-family: 'Noto Sans', sans-serif;
   margin-top: 20px;
   background: url(../img/theater.png) 50% 0 no-repeat transparent;
   height: 180px;
@@ -6324,7 +6330,7 @@ body > header #main-nav .selected > a:focus {
   text-align: center;
 }
 #kontakt-wrapper {
-  font-family: 'museo', serif;
+  font-family: 'Noto Sans', sans-serif;
   text-decoration: none;
   font-size: 150%;
   margin-top: 30px;
@@ -6374,6 +6380,9 @@ body > header #main-nav .selected > a:focus {
   font-size: 120%;
   margin-top: 30px;
   margin-bottom: 50px;
+}
+#info-wrapper h1 {
+  font-family: 'Noto Sans', sans-serif;
 }
 #info-wrapper img {
   padding: 5%;
