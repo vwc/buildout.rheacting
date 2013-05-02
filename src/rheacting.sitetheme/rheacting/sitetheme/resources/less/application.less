@@ -29,6 +29,7 @@ body {
 // Example styles for a custom editbar override of the basic
 // twitter bootstarp navbar to make the edit bar look like a
 // browser toolbar
+
 body > header {
     background: url(../img/header_bg.png) 0 0 no-repeat transparent;
     background-position: center;
@@ -39,6 +40,8 @@ body > header {
             border-radius:0px;
         }
     }
+    
+
 
 #toolbar {
     width: 100%;
@@ -55,8 +58,8 @@ body > header {
         background-color: transparent;
         float: right;
         display: block;
-        margin-left: 300px;
             #main-links {
+                margin-top: 85px;
                 float: right;
                 top: 10px;
                 font-size: 180%;
@@ -114,12 +117,75 @@ body > header {
     color: #fff;
 }
 
+
+body.section-acting > header {
+    background: url(../img/header_acting.png) 50% 0 no-repeat transparent;
+    background-position: center;
+    background-color: #D7D7D7;
+    .navbar #main-links a {
+        color: #000;
+    }
+}
+body.section-acting {
+    background-color: #000;
+    color: #fff;
+    #header-wrapper {
+    min-height: 100px;
+        #logo {
+            float: left;
+            top: 5px;
+            z-index: 0;
+            margin-bottom: 10px; 
+            display: block;
+            background: 0 0px url(../img/logo_invert.png) no-repeat;
+            background-size: 100%;
+            .size(295px, 95px);
+            text-indent: -3000px;
+            overflow:hidden;
+        }
+        
+}
+
+    #kontakt-wrapper {
+        h3 {
+            color: #000;
+        }
+    }
+    #site-wrapper {
+        #content {
+            font-size: 120%;
+            #content-core {
+                .pullquote {
+                    background-color: #000;
+                }
+            }
+            table.plain {
+                tr {
+                    th:first-child {
+                        color: #fff;
+                        text-align: right;
+                    }
+                    th {
+                        color: @rh-red;
+                    }
+                    td:first-child {
+                        color: #fff;
+                        text-align: right;
+                    }
+                    td {
+                        color: @rh-red;
+                    }
+                }
+            }
+        }
+    }
+}
 #header-wrapper-frontpage {
     min-height: 340px;
     #social-links {
         font-family: 'Noto Sans', sans-serif;
         font-size: 140%;
-        margin-top: -100px;
+        margin-top: -120px;
         width: 200px;
         float: right;
         list-style: none;
@@ -394,9 +460,22 @@ body > header {
         }
     }
 }
-
-
+//html.js body.template-folder_summary_view header#topbar div.container nav.navbar ul#main-links
+@media (max-width: 1200px) {
+    #kontakt-wrapper {
+        .col-span-3 {
+            min-width: 50%;
+        }
+    }
+}
 @media (max-width: 370px) {
+    body > header {
+        .navbar {
+            #main-links {
+                margin-top: 20px;
+            }
+        }
+    }
     #header-wrapper-frontpage {
         #social-links {
             margin-top: 100px;

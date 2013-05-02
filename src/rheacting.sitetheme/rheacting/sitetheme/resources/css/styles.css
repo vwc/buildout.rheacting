@@ -6056,9 +6056,9 @@ body > header .navbar {
   background-color: transparent;
   float: right;
   display: block;
-  margin-left: 300px;
 }
 body > header .navbar #main-links {
+  margin-top: 85px;
   float: right;
   top: 10px;
   font-size: 180%;
@@ -6106,13 +6106,64 @@ body > header #main-nav .selected > a:focus {
 .white {
   color: #fff;
 }
+body.section-acting > header {
+  background: url(../img/header_acting.png) 50% 0 no-repeat transparent;
+  background-position: center;
+  background-color: #D7D7D7;
+}
+body.section-acting > header .navbar #main-links a {
+  color: #000;
+}
+body.section-acting {
+  background-color: #000;
+  color: #fff;
+}
+body.section-acting #header-wrapper {
+  min-height: 100px;
+}
+body.section-acting #header-wrapper #logo {
+  float: left;
+  top: 5px;
+  z-index: 0;
+  margin-bottom: 10px;
+  display: block;
+  background: 0 0px url(../img/logo_invert.png) no-repeat;
+  background-size: 100%;
+  width: 295px;
+  height: 95px;
+  text-indent: -3000px;
+  overflow: hidden;
+}
+body.section-acting #kontakt-wrapper h3 {
+  color: #000;
+}
+body.section-acting #site-wrapper #content {
+  font-size: 120%;
+}
+body.section-acting #site-wrapper #content #content-core .pullquote {
+  background-color: #000;
+}
+body.section-acting #site-wrapper #content table.plain tr th:first-child {
+  color: #fff;
+  text-align: right;
+}
+body.section-acting #site-wrapper #content table.plain tr th {
+  color: #bc0b27;
+}
+body.section-acting #site-wrapper #content table.plain tr td:first-child {
+  color: #fff;
+  text-align: right;
+}
+body.section-acting #site-wrapper #content table.plain tr td {
+  color: #bc0b27;
+}
 #header-wrapper-frontpage {
   min-height: 340px;
 }
 #header-wrapper-frontpage #social-links {
   font-family: 'Noto Sans', sans-serif;
   font-size: 140%;
-  margin-top: -100px;
+  margin-top: -120px;
   width: 200px;
   float: right;
   list-style: none;
@@ -6392,7 +6443,15 @@ body > header #main-nav .selected > a:focus {
   margin-left: 20px;
   font-family: 'Zeyada', cursive;
 }
+@media (max-width: 1200px) {
+  #kontakt-wrapper .col-span-3 {
+    min-width: 50%;
+  }
+}
 @media (max-width: 370px) {
+  body > header .navbar #main-links {
+    margin-top: 20px;
+  }
   #header-wrapper-frontpage #social-links {
     margin-top: 100px;
     width: 40%;
