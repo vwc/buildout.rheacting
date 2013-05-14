@@ -153,7 +153,6 @@ body.section-acting {
     }
     #site-wrapper {
         #content {
-            font-size: 120%;
             #content-core {
                 .pullquote {
                     background-color: #000;
@@ -259,9 +258,26 @@ body.section-acting {
             overflow:hidden;
         }
 }
-
 #site-wrapper {
     // Active nav items
+    margin-top: 30px;
+    #content {
+        .photoAlbumEntry {
+            height: 150px;
+            width:150px;
+            display: block;
+            float: left;
+            margin: 10px;
+            a {
+                .photoAlbumEntryWrapper {
+                    
+                }
+                .photoAlbumEntryTitle {
+
+            }
+            }
+        }
+    }
     #content,
     #frontpage-content {
     margin-left: 10px;
@@ -275,18 +291,22 @@ body.section-acting {
             color: @rh-red;
             font-family: 'museo', serif;
             text-transform: uppercase;
+            letter-spacing: 0.25em;
         }
         #content-core {
+            font-size: 23px;
+            line-height: 1.5em;
             ul {
                 list-style: none;
             }
             li {
+                line-height: 1.5em;
                 position: relative;
             }
             li:before {
                 position: absolute;
                 top: 8px;
-                margin: 0 0 0 -12px;
+                margin: 7px 0 0 -12px;
                 /* accommodate Camino */
                 vertical-align: middle;
                 display: inline-block;
@@ -300,9 +320,9 @@ body.section-acting {
                 float: right;
                 color: #000;
                 text-decoration: none;
-                padding: 20px 40px 20px 20px;
+                padding: 10px 30px 10px 10px;
                 border-radius: 5px 5px 5px 5px;
-                background: url(../img/arrow_right.png) 90% 50% no-repeat transparent;
+                background: url(../img/arrow_right.png) 95% 50% no-repeat transparent;
                 background-color: @lightpink;                    
                 }
                 width: auto;
@@ -312,6 +332,8 @@ body.section-acting {
             }
             a {
                 color: @rh-red;
+                font-family: 'Marck Script', cursive;
+                text-decoration: underline;
             }
             img {
                 border:none;

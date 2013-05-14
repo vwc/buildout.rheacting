@@ -6137,9 +6137,6 @@ body.section-acting #header-wrapper #logo {
 body.section-acting #kontakt-wrapper h3 {
   color: #000;
 }
-body.section-acting #site-wrapper #content {
-  font-size: 120%;
-}
 body.section-acting #site-wrapper #content #content-core .pullquote {
   background-color: #000;
 }
@@ -6237,6 +6234,16 @@ body.section-acting #site-wrapper #content table.plain tr td {
   text-indent: -3000px;
   overflow: hidden;
 }
+#site-wrapper {
+  margin-top: 30px;
+}
+#site-wrapper #content .photoAlbumEntry {
+  height: 150px;
+  width: 150px;
+  display: block;
+  float: left;
+  margin: 10px;
+}
 #site-wrapper #content,
 #site-wrapper #frontpage-content {
   margin-left: 10px;
@@ -6253,6 +6260,12 @@ body.section-acting #site-wrapper #content table.plain tr td {
   color: #bc0b27;
   font-family: 'museo', serif;
   text-transform: uppercase;
+  letter-spacing: 0.25em;
+}
+#site-wrapper #content #content-core,
+#site-wrapper #frontpage-content #content-core {
+  font-size: 23px;
+  line-height: 1.5em;
 }
 #site-wrapper #content #content-core ul,
 #site-wrapper #frontpage-content #content-core ul {
@@ -6260,13 +6273,14 @@ body.section-acting #site-wrapper #content table.plain tr td {
 }
 #site-wrapper #content #content-core li,
 #site-wrapper #frontpage-content #content-core li {
+  line-height: 1.5em;
   position: relative;
 }
 #site-wrapper #content #content-core li:before,
 #site-wrapper #frontpage-content #content-core li:before {
   position: absolute;
   top: 8px;
-  margin: 0 0 0 -12px;
+  margin: 7px 0 0 -12px;
   /* accommodate Camino */
 
   vertical-align: middle;
@@ -6287,14 +6301,16 @@ body.section-acting #site-wrapper #content table.plain tr td {
   float: right;
   color: #000;
   text-decoration: none;
-  padding: 20px 40px 20px 20px;
+  padding: 10px 30px 10px 10px;
   border-radius: 5px 5px 5px 5px;
-  background: url(../img/arrow_right.png) 90% 50% no-repeat transparent;
+  background: url(../img/arrow_right.png) 95% 50% no-repeat transparent;
   background-color: #efeeed;
 }
 #site-wrapper #content #content-core a,
 #site-wrapper #frontpage-content #content-core a {
   color: #bc0b27;
+  font-family: 'Marck Script', cursive;
+  text-decoration: underline;
 }
 #site-wrapper #content #content-core img,
 #site-wrapper #frontpage-content #content-core img {
