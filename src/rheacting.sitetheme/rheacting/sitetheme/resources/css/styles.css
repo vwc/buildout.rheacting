@@ -6237,12 +6237,18 @@ body.section-acting #site-wrapper #content table.plain tr td {
 #site-wrapper {
   margin-top: 30px;
 }
+#site-wrapper #content {
+  font-size: 23px;
+}
 #site-wrapper #content .photoAlbumEntry {
-  height: 150px;
-  width: 150px;
+  height: 97px;
+  width: 128px;
   display: block;
   float: left;
   margin: 10px;
+}
+#site-wrapper #content .photoAlbumEntry a span.photoAlbumEntryTitle {
+  visibility: hidden;
 }
 #site-wrapper #content,
 #site-wrapper #frontpage-content {
@@ -6334,7 +6340,7 @@ body.section-acting #site-wrapper #content table.plain tr td {
 }
 #site-wrapper #content #box-wrapper,
 #site-wrapper #frontpage-content #box-wrapper {
-  margin-top: -5%;
+  margin-top: -10%;
 }
 #site-wrapper #content #box-wrapper a .btn,
 #site-wrapper #frontpage-content #box-wrapper a .btn {
@@ -6468,6 +6474,8 @@ body.section-acting #site-wrapper #content table.plain tr td {
   body > header .navbar #main-links {
     margin-top: 20px;
   }
+}
+@media (max-width: 530px) {
   #header-wrapper-frontpage #social-links {
     margin-top: 100px;
     width: 40%;

@@ -262,9 +262,10 @@ body.section-acting {
     // Active nav items
     margin-top: 30px;
     #content {
+        font-size: 23px;
         .photoAlbumEntry {
-            height: 150px;
-            width:150px;
+            height: 97px;
+            width: 128px;
             display: block;
             float: left;
             margin: 10px;
@@ -272,8 +273,8 @@ body.section-acting {
                 .photoAlbumEntryWrapper {
                     
                 }
-                .photoAlbumEntryTitle {
-
+                span.photoAlbumEntryTitle {
+                    visibility: hidden;
             }
             }
         }
@@ -362,7 +363,7 @@ body.section-acting {
                     border: none;
                 } 
             }
-            margin-top: -5%;
+            margin-top: -10%;
             #leftBox {
                 display: block;
                 //width: 50%;
@@ -498,6 +499,10 @@ body.section-acting {
             }
         }
     }
+
+}
+
+@media( max-width: 530px) {
     #header-wrapper-frontpage {
         #social-links {
             margin-top: 100px;
@@ -505,7 +510,7 @@ body.section-acting {
             margin-left: 30%;
             margin-right: 30%
         }
-    }
+    }    
 }
 // Example styles for a HMTL5 based site footer
 body > footer {
