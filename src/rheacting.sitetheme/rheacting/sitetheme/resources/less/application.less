@@ -127,6 +127,7 @@ body.section-acting > header {
     }
 }
 body.section-acting {
+
     background-color: #000;
     color: #fff;
     #header-wrapper {
@@ -142,9 +143,8 @@ body.section-acting {
             .size(295px, 95px);
             text-indent: -3000px;
             overflow:hidden;
-        }
-        
-}
+        }    
+    }
 
     #kontakt-wrapper {
         h3 {
@@ -159,6 +159,8 @@ body.section-acting {
                 }
             }
             table.plain {
+                font-size: 20px;
+                line-height: 0.75em;
                 tr {
                     th:first-child {
                         color: #fff;
@@ -264,11 +266,19 @@ body.section-acting {
     #content {
         font-size: 23px;
         .photoAlbumEntry {
-            height: 97px;
-            width: 128px;
+            height: 150px;
+            width: 150px;
+            border: 1px solid #D7D7D7;
+            border-radius: 5px 5px 5px 5px;
             display: block;
             float: left;
-            margin: 10px;
+            margin-left: 10px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            img {
+                margin-left: 10px;
+                margin-top: 10px
+            }
             a {
                 .photoAlbumEntryWrapper {
                     
@@ -283,6 +293,10 @@ body.section-acting {
     #frontpage-content {
     margin-left: 10px;
     margin-right: 10px;
+        .documentDescription {
+            font-weight: bold;
+            color: #6D6D6D;
+        }
         pre {
             background-color: #fff;
             border: none;
@@ -297,6 +311,7 @@ body.section-acting {
         #content-core {
             font-size: 23px;
             line-height: 1.5em;
+            
             ul {
                 list-style: none;
             }
@@ -340,9 +355,14 @@ body.section-acting {
                 border:none;
             }
             h3 {
+                font-weight: bold;
+                margin-left: -15px;
                 font-family: 'Noto Sans', sans-serif;
-                text-decoration: underline;
+                //text-decoration: underline;
+                padding: 15px 15px 15px 15px;
+                background-color: @lightpink;
             }
+
             .tileHeadline {
                 letter-spacing: 0.25em;
                 a {
@@ -365,6 +385,10 @@ body.section-acting {
             }
             margin-top: -10%;
             #leftBox {
+                a {
+                    text-decoration: none;
+                    color: #000;
+                }
                 display: block;
                 //width: 50%;
                 .boxHeader {
@@ -372,6 +396,8 @@ body.section-acting {
                     margin-top: 20px;
                     background: url(../img/microphone.png) 50% 0 no-repeat transparent;
                     height: 180px;
+
+
                     p {
                         width: 100%;
                         text-align: center;
@@ -390,6 +416,10 @@ body.section-acting {
             }
             #rightBox {
                 //width: 50%;
+                a {
+                    text-decoration: none;
+                    color: #000;
+                }
                 .boxHeader {
                     font-family: 'Noto Sans', sans-serif;
                     margin-top: 20px;

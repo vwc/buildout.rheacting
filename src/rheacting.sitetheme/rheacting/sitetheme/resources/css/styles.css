@@ -6140,6 +6140,10 @@ body.section-acting #kontakt-wrapper h3 {
 body.section-acting #site-wrapper #content #content-core .pullquote {
   background-color: #000;
 }
+body.section-acting #site-wrapper #content table.plain {
+  font-size: 20px;
+  line-height: 0.75em;
+}
 body.section-acting #site-wrapper #content table.plain tr th:first-child {
   color: #fff;
   text-align: right;
@@ -6241,11 +6245,19 @@ body.section-acting #site-wrapper #content table.plain tr td {
   font-size: 23px;
 }
 #site-wrapper #content .photoAlbumEntry {
-  height: 97px;
-  width: 128px;
+  height: 150px;
+  width: 150px;
+  border: 1px solid #D7D7D7;
+  border-radius: 5px 5px 5px 5px;
   display: block;
   float: left;
-  margin: 10px;
+  margin-left: 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+#site-wrapper #content .photoAlbumEntry img {
+  margin-left: 10px;
+  margin-top: 10px;
 }
 #site-wrapper #content .photoAlbumEntry a span.photoAlbumEntryTitle {
   visibility: hidden;
@@ -6254,6 +6266,11 @@ body.section-acting #site-wrapper #content table.plain tr td {
 #site-wrapper #frontpage-content {
   margin-left: 10px;
   margin-right: 10px;
+}
+#site-wrapper #content .documentDescription,
+#site-wrapper #frontpage-content .documentDescription {
+  font-weight: bold;
+  color: #6D6D6D;
 }
 #site-wrapper #content pre,
 #site-wrapper #frontpage-content pre {
@@ -6324,8 +6341,11 @@ body.section-acting #site-wrapper #content table.plain tr td {
 }
 #site-wrapper #content #content-core h3,
 #site-wrapper #frontpage-content #content-core h3 {
+  font-weight: bold;
+  margin-left: -15px;
   font-family: 'Noto Sans', sans-serif;
-  text-decoration: underline;
+  padding: 15px 15px 15px 15px;
+  background-color: #efeeed;
 }
 #site-wrapper #content #content-core .tileHeadline,
 #site-wrapper #frontpage-content #content-core .tileHeadline {
@@ -6354,6 +6374,11 @@ body.section-acting #site-wrapper #content table.plain tr td {
 #site-wrapper #frontpage-content #box-wrapper #leftBox {
   display: block;
 }
+#site-wrapper #content #box-wrapper #leftBox a,
+#site-wrapper #frontpage-content #box-wrapper #leftBox a {
+  text-decoration: none;
+  color: #000;
+}
 #site-wrapper #content #box-wrapper #leftBox .boxHeader,
 #site-wrapper #frontpage-content #box-wrapper #leftBox .boxHeader {
   font-family: 'Noto Sans', sans-serif;
@@ -6377,6 +6402,11 @@ body.section-acting #site-wrapper #content table.plain tr td {
 #site-wrapper #content #box-wrapper #leftBox .boxBody p,
 #site-wrapper #frontpage-content #box-wrapper #leftBox .boxBody p {
   text-align: center;
+}
+#site-wrapper #content #box-wrapper #rightBox a,
+#site-wrapper #frontpage-content #box-wrapper #rightBox a {
+  text-decoration: none;
+  color: #000;
 }
 #site-wrapper #content #box-wrapper #rightBox .boxHeader,
 #site-wrapper #frontpage-content #box-wrapper #rightBox .boxHeader {
