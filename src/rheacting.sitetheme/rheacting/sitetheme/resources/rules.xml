@@ -33,10 +33,10 @@
         <drop theme="/html/head/link" />
 
         <!-- Custom favicon implementation -->
-        <!--<drop content="link[@type='image/x-icon']" />
+        <drop content="link[@type='image/x-icon']" />
         <after theme="/html/head">
             <link rel="shortcut icon" href="/++theme++rheacting.jmstheme/img/favicon.ico" type="images/x-icon" />
-        </after>-->
+        </after>
 
         <!-- Copy over the id/class attributes on the body tag.
              This is important for per-section styling -->

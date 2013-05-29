@@ -6141,7 +6141,7 @@ body.section-acting #site-wrapper #content #content-core .pullquote {
   background-color: #000;
 }
 body.section-acting #site-wrapper #content table.plain {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 0.75em;
 }
 body.section-acting #site-wrapper #content table.plain tr th:first-child {
@@ -6158,10 +6158,13 @@ body.section-acting #site-wrapper #content table.plain tr td:first-child {
 body.section-acting #site-wrapper #content table.plain tr td {
   color: #bc0b27;
 }
-#header-wrapper-frontpage {
+body.section-acting #site-wrapper #content table.plain tr td span {
+  line-height: 1.5em;
+}
+table.plain tbody tr td p span #header-wrapper-frontpage {
   min-height: 340px;
 }
-#header-wrapper-frontpage #social-links {
+table.plain tbody tr td p span #header-wrapper-frontpage #social-links {
   font-family: 'Noto Sans', sans-serif;
   font-size: 140%;
   margin-top: -120px;
@@ -6169,26 +6172,26 @@ body.section-acting #site-wrapper #content table.plain tr td {
   float: right;
   list-style: none;
 }
-#header-wrapper-frontpage #social-links li {
+table.plain tbody tr td p span #header-wrapper-frontpage #social-links li {
   display: inline-block;
 }
-#header-wrapper-frontpage #social-links li a {
+table.plain tbody tr td p span #header-wrapper-frontpage #social-links li a {
   padding: 0.25em;
   color: #000;
   text-decoration: none;
 }
-#header-wrapper-frontpage #social-links li a:hover {
+table.plain tbody tr td p span #header-wrapper-frontpage #social-links li a:hover {
   color: #bc0b27;
 }
-#header-wrapper-frontpage #social-links li a:active {
+table.plain tbody tr td p span #header-wrapper-frontpage #social-links li a:active {
   color: #bc0b27;
 }
-#header-wrapper-frontpage #social-links li i {
+table.plain tbody tr td p span #header-wrapper-frontpage #social-links li i {
   padding-top: 7px;
   background-color: #fff;
   border-radius: 20px 20px 20px 20px;
 }
-#header-wrapper-frontpage #textbox {
+table.plain tbody tr td p span #header-wrapper-frontpage #textbox {
   font-family: 'Noto Sans', sans-serif;
   padding-top: 50px;
   margin-top: 100px;
@@ -6200,15 +6203,15 @@ body.section-acting #site-wrapper #content table.plain tr td {
   font-size: 150%;
   font-weight: bold;
 }
-#header-wrapper-frontpage #textbox #textboxHeader {
+table.plain tbody tr td p span #header-wrapper-frontpage #textbox #textboxHeader {
   width: 100%;
   height: 20px;
   background: url(../img/arrow_down.png) 50% 0 no-repeat transparent;
 }
-#header-wrapper-frontpage #textbox #textboxBody {
+table.plain tbody tr td p span #header-wrapper-frontpage #textbox #textboxBody {
   margin-top: 10px;
 }
-#header-wrapper-frontpage #logo {
+table.plain tbody tr td p span #header-wrapper-frontpage #logo {
   float: left;
   top: 5px;
   z-index: 0;
