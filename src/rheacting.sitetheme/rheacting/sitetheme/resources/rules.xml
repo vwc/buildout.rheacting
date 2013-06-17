@@ -35,7 +35,7 @@
         <!-- Custom favicon implementation -->
         <drop content="link[@type='image/x-icon']" />
         <after theme="/html/head">
-            <link rel="shortcut icon" href="/++theme++rheacting.jmstheme/img/favicon.ico" type="images/x-icon" />
+            <link rel="shortcut icon" href="/++theme++rheacting.sitetheme/img/favicon.ico" type="images/x-icon" />
         </after>
 
 
