@@ -6334,7 +6334,7 @@ a .icon-flip-vertical:before {
   content: "\f165";
 }
 .icon-youtube-sign:before {
-  content: "\f166"; 
+  content: "\f166";
 }
 .icon-youtube:before {
   content: "\f167";
@@ -6563,7 +6563,7 @@ body.section-acting #site-wrapper #content #content-core .pullquote {
 }
 body.section-acting #site-wrapper #content table.plain {
   font-size: 18px;
-  line-height: 0.75em;
+  line-height: 1.5em;
 }
 body.section-acting #site-wrapper #content table.plain tr th:first-child {
   color: #fff;
@@ -6580,7 +6580,7 @@ body.section-acting #site-wrapper #content table.plain tr td {
   color: #bc0b27;
 }
 body.section-acting #site-wrapper #content table.plain tr td span {
-  line-height: 1.5em;
+  line-height: 1.0em;
 }
 #header-wrapper-frontpage {
   min-height: 340px;
