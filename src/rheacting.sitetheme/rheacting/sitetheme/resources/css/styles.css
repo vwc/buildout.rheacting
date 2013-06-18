@@ -6561,6 +6561,10 @@ body.section-acting #kontakt-wrapper h3 {
 body.section-acting #site-wrapper #content #content-core .pullquote {
   background-color: #000;
 }
+body.section-acting #site-wrapper #content a.internal-link {
+  text-decoration: none;
+  font-family: 'Fjord One', serif;
+}
 body.section-acting #site-wrapper #content table.plain {
   font-size: 18px;
   line-height: 1.5em;
