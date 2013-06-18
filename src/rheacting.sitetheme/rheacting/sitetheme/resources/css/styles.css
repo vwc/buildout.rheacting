@@ -6579,9 +6579,6 @@ body.section-acting #site-wrapper #content table.plain tr td:first-child {
 body.section-acting #site-wrapper #content table.plain tr td {
   color: #bc0b27;
 }
-body.section-acting #site-wrapper #content table.plain tr td span {
-  line-height: 1.0em;
-}
 #header-wrapper-frontpage {
   min-height: 340px;
 }
