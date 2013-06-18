@@ -6558,12 +6558,18 @@ body.section-acting #header-wrapper #logo {
 body.section-acting #kontakt-wrapper h3 {
   color: #000;
 }
+body.section-acting #site-wrapper #content {
+  margin-top: -50px;
+}
+body.section-acting #site-wrapper #content h1.documentFirstHeading {
+  visibility: hidden;
+}
+body.section-acting #site-wrapper #content h2 {
+  font-size: 2em;
+  letter-spacing: 0.25em;
+}
 body.section-acting #site-wrapper #content #content-core .pullquote {
   background-color: #000;
-}
-body.section-acting #site-wrapper #content a.internal-link {
-  text-decoration: none;
-  font-family: 'Fjord One', serif;
 }
 body.section-acting #site-wrapper #content table.plain {
   font-size: 18px;

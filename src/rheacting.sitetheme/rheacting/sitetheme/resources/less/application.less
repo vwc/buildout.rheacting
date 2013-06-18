@@ -153,14 +153,18 @@ body.section-acting {
     }
     #site-wrapper { 
         #content {
+            h1.documentFirstHeading {
+                visibility: hidden;
+            }
+            h2 {
+                font-size: 2em;
+                letter-spacing: 0.25em;
+            }
+            margin-top: -50px;
             #content-core {
                 .pullquote {
                     background-color: #000;
                 }
-            }
-            a.internal-link {
-                text-decoration: none;
-                font-family: 'Fjord One',serif;
             }
             table.plain {
                 font-size: 18px;
@@ -185,6 +189,7 @@ body.section-acting {
         }
     }
 }
+
 #header-wrapper-frontpage {
     min-height: 340px;
     #social-links {
