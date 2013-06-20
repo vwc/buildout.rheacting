@@ -39,9 +39,9 @@
         </after>
 
         <!-- Add webmastger tools tag -->
-        <before theme="/html/head">
+        <after theme="/html/head/base">
             <meta name="google-site-verification" content="HMW2zarwYrzqDoNJWf_nY-dux04jzdYyf4ou4PpEJbs" />
-        </before>
+        </after>
 
         <!-- Copy over the id/class attributes on the body tag.
              This is important for per-section styling -->
