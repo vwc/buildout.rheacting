@@ -39,7 +39,7 @@
         </after>
 
         <!-- Add webmastger tools tag -->
-        <after theme="/html/head/base">
+        <after theme-children="/html/head">
             <meta name="google-site-verification" content="HMW2zarwYrzqDoNJWf_nY-dux04jzdYyf4ou4PpEJbs" />
         </after>
 
