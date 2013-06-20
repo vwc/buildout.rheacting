@@ -38,6 +38,10 @@
             <link rel="shortcut icon" href="/++theme++rheacting.sitetheme/img/favicon.ico" type="images/x-icon" />
         </after>
 
+        <!-- Add webmastger tools tag -->
+        <before theme="/html/head">
+            <meta name="google-site-verification" content="HMW2zarwYrzqDoNJWf_nY-dux04jzdYyf4ou4PpEJbs" />
+        </before>
 
         <!-- Copy over the id/class attributes on the body tag.
              This is important for per-section styling -->
