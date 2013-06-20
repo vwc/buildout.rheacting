@@ -6535,6 +6535,10 @@ body.section-acting > header {
 body.section-acting > header .navbar #main-links a {
   color: #000;
 }
+body.section-acting > header .navbar #main-links #acting {
+  color: #bc0b27;
+  font-weight: bold;
+}
 body.section-acting {
   background-color: #000;
   color: #fff;
@@ -6717,6 +6721,18 @@ body.section-acting #site-wrapper #content table.plain tr td {
   font-size: 23px;
   line-height: 1.5em;
 }
+#site-wrapper #content #content-core p a,
+#site-wrapper #frontpage-content #content-core p a {
+  color: #bc0b27;
+  font-family: 'Marck Script', cursive;
+  text-decoration: underline;
+}
+#site-wrapper #content #content-core a,
+#site-wrapper #frontpage-content #content-core a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: 'Noto Sans', sans-serif;
+}
 #site-wrapper #content #content-core ul,
 #site-wrapper #frontpage-content #content-core ul {
   list-style: none;
@@ -6755,12 +6771,6 @@ body.section-acting #site-wrapper #content table.plain tr td {
   border-radius: 5px 5px 5px 5px;
   background: url(../img/arrow_right.png) 95% 50% no-repeat transparent;
   background-color: #efeeed;
-}
-#site-wrapper #content #content-core a,
-#site-wrapper #frontpage-content #content-core a {
-  color: #bc0b27;
-  font-family: 'Marck Script', cursive;
-  text-decoration: underline;
 }
 #site-wrapper #content #content-core img,
 #site-wrapper #frontpage-content #content-core img {
