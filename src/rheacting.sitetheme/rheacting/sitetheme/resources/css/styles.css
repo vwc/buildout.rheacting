@@ -6927,6 +6927,10 @@ body.section-acting #site-wrapper #content table.plain tr td {
 #info-wrapper img {
   padding: 5%;
 }
+#info-wrapper #personal img {
+  height: 70%;
+  width: 70%;
+}
 #info-wrapper #personal h1 {
   font-size: 47px;
   margin-left: 20px;
