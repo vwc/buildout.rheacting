@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="google-site-verification" content="HMW2zarwYrzqDoNJWf_nY-dux04jzdYyf4ou4PpEJbs" />
+    <meta charset="utf-8">
+    <title>rheacting Theme, based on Twitter Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="less/styles.less" rel="stylesheet/less" type="text/css">
+    <!-- Responsive styles - enable if necessary -->
+    <!--<link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">-->
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
+    <script type="text/javascript" src="http://cdn.jquerytools.org/1.2.6/all/jquery.tools.min.js"></script>
+    <script type="text/javascript" src="js/less-1.3.3.min.js"></script>
+  </head>
+
+  <body>
+<div id="editbar-wrapper" class="navbar navbar-inverse navbar-fixed-top">
+    <a class="navbar-brand" href="#">Plone Toolbar</a>
+</div>
+  <header id="topbar">
+ <!--     <div id="toolbar" class="navbar navbar-inverse navbar-fixed-top">
+          <a class="navbar-brand" href="#">Plone Toolbar</a>
+      </div>-->
+      <div class="container">
+      <!-- Twitter boostrap based default navigation -->
+        <nav class="navbar">
+            <ul id="main-links">
+              <li>
+                <a href="/rhetorik">Rhetorik<span class="red">.</span></a>
+              </li>
+              <li>
+                <a id="acting" href="/acting">Acting</a>
+              </li>
+            </ul><!-- #main-links -->
+        </nav><!-- .navbar -->
+        <div id="header-wrapper">
+            <h1><a href="/" id="logo">Logo</a></h1>            
+          </div><!-- #logo-wrapper -->
+        </div><!-- #header-wrapper -->
+      </div><!-- .container -->
+    </header>
+
+  <section id="site-wrapper" class="container">
+  <nav class="navbar navbar">
+  <!-- Brand and toggle get grouped for better mobile display -->
+    <ul class="nav">
+      <li>
+        <a id="sedcard"href="/acting">SEDCARD</a>
+      </li>
+          <li class="dropdown">
+            <a id="vita" class="dropdown-toggle" data-toggle="dropdown" href="/acting/vita" >VITA...</a>
+            <ul class="dropdown-menu">
+              <li><a id="engagements" href="/acting/vita">Engagements</a></li>
+              <li><a id="ausbildung" href="/acting/vita/ausbildung">Ausbildung</a></li>
+              <li><a id="auszeichnungen" href="/acting/vita/auszeichnungen">Auszeichnungen</a></li>
+            </ul>
+        </li>
+        <li>
+          <li><a id="galerie" href="/acting/galerie">GALERIE</a></li>
+        </li>
+      </ul>   
+    </nav>
+     <div id="content">
+        <h1>Starter template <small>The barebone minimal</small></h1>
+        <p>Use this document as a way to quick start any new project.<br> All you get is this message and a barebones HTML document.</p>
+      </div>
+  </section> <!-- /container -->
+  
+    <section id="kontakt-wrapper">
+      <div class="row">
+        <div class="container">
+        <div id="kontaktpic"></div>
+        <h3><span>KONTAKT</span></h3>
+        <div class="col-span-3">
+          <a href="/"><i class="icon-phone-sign icon-large"></i><span>+49 (0) 175 524 19 78</span></a>
+        </div>
+        <div class="col-span-3">
+          <a href="mailto:dj@rheacting.de"><i class="icon-envelope icon-large"></i><span>dj@rheacting.de</span></a>          
+        </div>
+        <div class="col-span-3">
+          <a href="https://www.facebook.com/Rheacting?directed_target_id=0"><i class="icon-facebook-sign icon-large"></i><span>Facebook</span></a>          
+        </div>
+        <div class="col-span-3">
+          <a href="/"><i class="icon-xing-sign icon-large"></i><span>Xing</span></a>          
+        </div>
+      </div>
+      </div>
+    </section>
+    <footer id="site-footer">
+      <div class="container">
+        <ul id="footernav">
+          <li>&copy; 2013 Rheacting. All rights reserved</li>
+          <li><a href="/impressum">Impressum</a></li>
+          <li> . </li>
+          <li><a href="/agb">AGB</a></li>
+          <li> . </li>
+          <li><a href="/rhetorik">Rhetorik</a></li>
+          <li> . </li>
+          <li><a href="/acting">Acting</a></li>
+
+          
+        </ul>
+        <p></p>
+      </div>
+    </footer>
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!--<script src="../js/application.js"></script>-->
+    <script type="text/javascript">
+    WebFontConfig = {
+    google: { families: [ 'Fjord+One::latin','Noto+Sans::latin' ,'Marck+Script::latin' ] }
+    };
+    (function() {
+      var wf = document.createElement('script');
+      wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+        '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+      wf.type = 'text/javascript';
+      wf.async = 'true';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(wf, s);
+    })(); </script>
+    <script type="text/javascript">
+    var url = window.location;
+    $('ul.nav a[href="'+ url + '"]').parent().addClass('active');
+    $('ul.nav a').filter(function() {
+      return this.href == url;
+    }).parent().addClass('active');
+    </script>
+  </body>
+</html>

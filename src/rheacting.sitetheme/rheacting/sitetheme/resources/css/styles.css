@@ -6562,6 +6562,77 @@ body.section-acting #header-wrapper #logo {
 body.section-acting #kontakt-wrapper h3 {
   color: #000;
 }
+body.section-acting #site-wrapper nav {
+  background-color: #000;
+}
+body.section-acting #site-wrapper nav ul li {
+  width: 220px;
+}
+body.section-acting #site-wrapper nav ul li #sedcard {
+  background: url(../img/setcard.png) 0 0 no-repeat;
+  background-size: 70%;
+  width: 67px;
+  height: 67px;
+}
+body.section-acting #site-wrapper nav ul li #vita {
+  background: url(../img/vita.png) 0 0 no-repeat;
+  background-size: 70%;
+  width: 67px;
+  height: 67px;
+}
+body.section-acting #site-wrapper nav ul li #galerie {
+  background: url(../img/foto.png) 0 0 no-repeat;
+  background-size: 70%;
+  width: 67px;
+  height: 67px;
+}
+body.section-acting #site-wrapper nav ul li a {
+  height: 60px;
+  width: 220px;
+  font-size: 1.5em;
+  padding-left: 50px;
+  color: #fff;
+}
+body.section-acting #site-wrapper nav ul li ul.dropdown-menu {
+  color: #fff;
+  background-color: #000;
+}
+body.section-acting #site-wrapper nav ul li ul.dropdown-menu li #engagements {
+  background: url(../img/engagements.png) 0 0 no-repeat;
+  background-size: 70%;
+  width: 67px;
+  height: 67px;
+}
+body.section-acting #site-wrapper nav ul li ul.dropdown-menu li #ausbildung {
+  background: url(../img/ausbildung.png) 0 0 no-repeat;
+  background-size: 70%;
+  width: 67px;
+  height: 67px;
+}
+body.section-acting #site-wrapper nav ul li ul.dropdown-menu li #auszeichnungen {
+  background: url(../img/auszeichnung.png) 0 0 no-repeat;
+  background-size: 70%;
+  width: 67px;
+  height: 67px;
+}
+body.section-acting #site-wrapper nav ul li.active #sedcard {
+  background: url(../img/setcard_rot.png) 0 0 no-repeat;
+  background-size: 70%;
+  width: 67px;
+  height: 67px;
+}
+body.section-acting #site-wrapper nav ul li.active #vita {
+  background: url(../img/vita_rot.png) 0 0 no-repeat;
+  background-size: 70%;
+  width: 67px;
+  height: 67px;
+}
+body.section-acting #site-wrapper nav ul li.active #galerie {
+  background: url(../img/foto_rot.png) 0 0 no-repeat;
+  background-size: 70%;
+  width: 67px;
+  height: 67px;
+}
 body.section-acting #site-wrapper #content {
   margin-top: -50px;
 }

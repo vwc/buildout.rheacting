@@ -159,6 +159,75 @@ body.section-acting {
         }
     }
     #site-wrapper { 
+        nav {
+            background-color: #000;
+            ul {
+//              display:inline-block;
+                li {
+                    #sedcard {
+                            background: url(../img/setcard.png) 0 0 no-repeat;
+                            background-size: 70%;
+                            .size(67px,67px);                        
+                    }
+                    #vita {
+                        background: url(../img/vita.png) 0 0 no-repeat;
+                        background-size: 70%;
+                        .size(67px, 67px);
+                    }
+                    #galerie {
+                        background: url(../img/foto.png) 0 0 no-repeat;
+                        background-size: 70%;
+                        .size(67px, 67px);
+                    }
+                    width: 220px;
+                    a {
+                        height: 60px;
+                        width: 220px;
+                    font-size: 1.5em;
+                    padding-left: 50px;
+                    color: #fff;
+                    }
+                    ul.dropdown-menu {
+                        color: #fff;
+                        background-color: #000;
+                        li {
+                            #engagements {
+                                background: url(../img/engagements.png) 0 0 no-repeat;
+                                background-size: 70%;
+                                .size(67px, 67px);                                
+                            }
+                            #ausbildung {
+                                background: url(../img/ausbildung.png) 0 0 no-repeat;
+                                background-size: 70%;
+                                .size(67px, 67px);                                 
+                            }
+                            #auszeichnungen {
+                                background: url(../img/auszeichnung.png) 0 0 no-repeat;
+                                background-size: 70%;
+                                .size(67px, 67px);                                
+                            }
+                        }
+                    }
+                }
+                li.active {
+                     #sedcard {
+                            background: url(../img/setcard_rot.png) 0 0 no-repeat;
+                            background-size: 70%;
+                            .size(67px,67px);                        
+                    }   
+                    #vita {
+                        background: url(../img/vita_rot.png) 0 0 no-repeat;
+                        background-size: 70%;
+                        .size(67px, 67px);
+                    }   
+                    #galerie {
+                        background: url(../img/foto_rot.png) 0 0 no-repeat;
+                        background-size: 70%;
+                        .size(67px, 67px);
+                    }             
+                }
+            }
+        }
         #content {
             h1.documentFirstHeading {
                 visibility: hidden;
